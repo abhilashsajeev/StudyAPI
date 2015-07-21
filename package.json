@@ -1,27 +1,29 @@
 {
-  "name": "floormap-web",
-  "version": "0.1.0",
-  "description": "Floormap-Web: ...",
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {},
-  "scripts": {
-    "dev": "gulp --type dev",
-    "start": "gulp",
-    "build": "gulp build"
+  "name": "OpenShift-Sample-App",
+  "version": "1.0.0",
+  "description": "OpenShift Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url": "http://www.openshift.com/"
   },
-  "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "es6",
-      "js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "es6"
-    ]
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
   },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
   "dependencies": {
     "body-parser": "~1.12.4",
     "compression": "^1.5.0",
@@ -29,7 +31,11 @@
     "express": "~4.12.4",
     "jsonfile": "^2.2.1",
     "node-jsx": "~0.13.3",
-    "superagent": "^1.2.0",
-    "watchify": "~3.2.1"
-  }
+    "superagent": "^1.2.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
 }
